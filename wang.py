@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
 
 
 def beta(x,a,b,l,r):
@@ -13,8 +12,6 @@ def beta(x,a,b,l,r):
         return 1
 
 
-# In[2]:
-
 
 def func1(t,a,b,l,r):
     if t==l:
@@ -25,14 +22,10 @@ def func1(t,a,b,l,r):
         return div/dived
 
 
-# In[3]:
-
 
 def func2(u,a,b):
     return pow(u,a-1)*pow(1-u,b-1)
 
-
-# In[4]:
 
 
 from scipy import integrate
@@ -43,8 +36,6 @@ def C(x,a,b,l,r):
     v,err = integrate.quad(func1,l,x,args=(a,b,l,r))
     return v
 
-
-# In[12]:
 
 
 import numpy as np
@@ -57,34 +48,4 @@ for i,item in enumerate(x):
 
 plt.plot(x,y)
 plt.show()
-
-
-# In[10]:
-
-
-y[190]
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
